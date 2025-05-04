@@ -2,14 +2,14 @@
 
 .container {
   width: 100%;
-  height: 800px;
+  height: 1600px;
   background-image: url("https://rw017pp.wordpress.com/wp-content/uploads/2025/02/wp-1738621790376.gif");
   background-size: cover;
 }
 
 .atas {
   width: 100%;
-  height: 200px;
+  height: 230px;
   background-image: url("https://rw017pp.wordpress.com/wp-content/uploads/2025/05/wp-17463475517408718018001019193327.png");
   background-size: cover;
 }
@@ -197,7 +197,7 @@ nav {
 nav a {
   background: rgb(7, 137, 170);
   color: #fff;
-  min-width: 80px;
+  width: 110px;
   height: 40px;
   transition: background 0.5s, color 0.5s, transform 0.5s;
   margin: 0px 6px 6px 0px;
@@ -258,4 +258,47 @@ menuitem > menu > menuitem:hover > menu > menuitem,
 menuitem > menu > menuitem.hover > menu > menuitem {
   transform: translateX(0) translateY(0%);
   opacity: 1;
+}
+
+/* hp */
+@media (min-width: 500px;) {
+  .atas {
+    width: 100%;
+    height: 240px;
+  }
+  .container {
+    width: 100%;
+  }
+}
+
+/* tablet */
+@media (min-width: 750px;) {
+  .atas {
+    width: 100vw;
+    height: 800px;
+  }
+  .container {
+    width: 1500px;
+    height: 2000px;
+  }
+}
+/* desktop */
+@media (min-width: 992px;) {
+  .atas {
+    width: 100vw;
+    height: 1200px;
+  }
+  .container {
+    width: 2000px;
+    height: 2000px;
+  }
+  .inputBox input {
+    width: 95%;
+    height: 80px;
+    font-size: 18px;
+  }
+  button {
+    height: 60px;
+    font-size: 20px;
+  }
 }
