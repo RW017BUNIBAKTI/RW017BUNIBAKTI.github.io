@@ -1,0 +1,261 @@
+@url ("https://fonts.googleapis.com/css?family=poppins:200,300,400,500,600,700import,800,900&display=swap");
+
+.container {
+  width: 100%;
+  height: 800px;
+  background-image: url("https://rw017pp.wordpress.com/wp-content/uploads/2025/02/wp-1738621790376.gif");
+  background-size: cover;
+}
+
+.atas {
+  width: 100%;
+  height: 200px;
+  background-image: url("https://rw017pp.wordpress.com/wp-content/uploads/2025/05/wp-17463475517408718018001019193327.png");
+  background-size: cover;
+}
+h2 {
+  width: 100%;
+  height: 30px;
+
+  background: black;
+  color: white;
+  padding: 7px;
+  font-family: "press start 2p", serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+
+  border-radius: 20px;
+  border: 2px inset grey;
+
+  box-shadow: rgba(0, 0, 0, 4.35) 0px 5px 15px;
+
+  z-index: 10000;
+}
+.inputBox {
+}
+
+.inputBox input {
+  width: 90%;
+  height: 50px;
+  border-radius: 10px;
+  border: 2px inset green;
+  margin: 10px;
+}
+.inputBox textarea {
+  width: 90%;
+  height: 100px;
+  border-radius: 10px;
+  border: 2px inset green;
+  margin: 10px;
+}
+
+button {
+  width: 60%;
+  height: 30px;
+  border-radius: 10px;
+  border: 2px inset green;
+  margin: 10px;
+  font-family: "press start 2p", serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  background-image: url("https://i.ibb.co/4s0JpHS/gxs-Eyj4z-N7-Czz-Zcj-B12-Rc0-Vq-Rn-J7-BPAI4-K9v.gif");
+  babackground-size: cover;
+}
+
+p1 {
+  font-size: 28px;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+fieldset {
+  margin: 50px;
+  padding: 20px;
+  color: white;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  border: none;
+}
+
+legend {
+  font-size: 16px;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: transparent;
+  position: relative;
+  top: 6px;
+}
+
+input[type="radio"]:checked::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: #ca8489;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: appear 0.8s;
+}
+
+@keyframes appear {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    background-color: #fff;
+  }
+  45% {
+    transform: translate(-50%, -50%) scale(1.6);
+    background-color: #64aedf;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.7);
+    background-color: #ad97b3;
+  }
+  55% {
+    transform: translate(-50%, -50%) scale(1.6);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    background-color: #ca8489;
+  }
+}
+/*menu drop down*/
+
+nav menuitem {
+  position: relative;
+  display: block;
+  opacity: 0;
+  cursor: pointer;
+  color: #fff;
+}
+
+nav menuitem > menu {
+  position: absolute;
+  pointer-events: none;
+}
+nav > menu {
+  display: flex;
+}
+
+nav > menu > menuitem {
+  pointer-events: all;
+  opacity: 1;
+  color: #fff;
+}
+menu menuitem a {
+  white-space: nowrap;
+  display: block;
+  color: beige;
+}
+
+menuitem:hover > menu {
+  pointer-events: initial;
+}
+menuitem:hover > menu > menuitem,
+menu:hover > menuitem {
+  opacity: 1;
+}
+nav > menu > menuitem menuitem menu {
+  transform: translateX(100%);
+  top: 0;
+  right: 0;
+}
+/* User Styles Below Not Required */
+/* User Styles Below Not Required */
+/* User Styles Below Not Required */
+
+nav {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+nav a {
+  background: rgb(7, 137, 170);
+  color: #fff;
+  min-width: 80px;
+  height: 40px;
+  transition: background 0.5s, color 0.5s, transform 0.5s;
+  margin: 0px 6px 6px 0px;
+  padding: 5px 60px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  position: relative;
+  border-radius: 10px;
+  border: 2px inset green;
+}
+
+nav a:hover:before {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+}
+
+nav > menu > menuitem > a + menu:after {
+  content: "";
+  position: absolute;
+  border: 10px solid transparent;
+  border-top: 10px solid white;
+  left: 12px;
+  top: -40px;
+}
+nav menuitem > menu > menuitem > a + menu:after {
+  content: "";
+  position: absolute;
+  border: 10px solid transparent;
+  border-left: 10px solid white;
+  top: 10px;
+  left: -180px;
+  transition: opacity 0.6, transform 0s;
+}
+
+nav > menu > menuitem > menu > menuitem {
+  transition: transform 0.6s, opacity 0.6s;
+  transform: translateY(150%);
+  opacity: 0;
+}
+nav > menu > menuitem:hover > menu > menuitem,
+nav > menu > menuitem.hover > menu > menuitem {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+menuitem > menu > menuitem > menu > menuitem {
+  transition: transform 0.6s, opacity 0.6s;
+  transform: translateX(195px) translateY(0%);
+  opacity: 0;
+}
+menuitem > menu > menuitem:hover > menu > menuitem,
+menuitem > menu > menuitem.hover > menu > menuitem {
+  transform: translateX(0) translateY(0%);
+  opacity: 1;
+}
