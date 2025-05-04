@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <title>Penimbangan posyandu</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <style type="text/css">
+      h2 {
+        width: 100%;
+        height: 30px;
+
+        background: black;
+        color: white;
+        padding: 7px;
+        font-family: "press start 2p", serif;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+
+        border-radius: 20px;
+        border: 2px inset grey;
+
+        box-shadow: rgba(0, 0, 0, 4.35) 0px 5px 15px;
+
+        z-index: 10000;
+      }
+      @url ("https://fonts.googleapis.com/css?family=poppins:200,300,400,500,600,700import,800,900&display=swap");
+
+      .container {
+        width: 100%;
+        height: 800px;
+        background-image: url("https://rw017pp.wordpress.com/wp-content/uploads/2025/02/wp-1738621790376.gif");
+        background-size: cover;
+      }
+
+      .atas {
+        width: 100%;
+        height: 200px;
+        background-image: url("https://rw017pp.wordpress.com/wp-content/uploads/2025/05/wp-17463475517408718018001019193327.png");
+        background-size: cover;
+      }
+
+      .inputBox {
+      }
+
+      .inputBox input {
+        width: 90%;
+        height: 50px;
+        border-radius: 10px;
+        border: 2px inset green;
+        margin: 10px;
+      }
+      .inputBox textarea {
+        width: 90%;
+        height: 100px;
+        border-radius: 10px;
+        border: 2px inset green;
+        margin: 10px;
+      }
+
+      button {
+        width: 60%;
+        height: 30px;
+        border-radius: 10px;
+        border: 2px inset green;
+        margin: 10px;
+        font-family: "press start 2p", serif;
+        font-size: 12px;
+        font-weight: bold;
+        color: white;
+        background-image: url("https://i.ibb.co/4s0JpHS/gxs-Eyj4z-N7-Czz-Zcj-B12-Rc0-Vq-Rn-J7-BPAI4-K9v.gif");
+        babackground-size: cover;
+      }
+
+      p1 {
+        font-size: 28px;
+        font-weight: bold;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(2px);
+        border-radius: 20px;
+        padding: 10px 20px;
+        color: white;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+      fieldset {
+        margin: 50px;
+        padding: 20px;
+        color: white;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        display: inline-block;
+        border: none;
+      }
+
+      legend {
+        font-size: 16px;
+        font-weight: bold;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(2px);
+        border-radius: 20px;
+        padding: 10px 20px;
+        color: white;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      input[type="radio"] {
+        appearance: none;
+        -webkit-appearance: none;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        margin-right: 10px;
+        background-color: transparent;
+        position: relative;
+        top: 6px;
+      }
+
+      input[type="radio"]:checked::before {
+        content: "";
+        display: block;
+        width: 12px;
+        height: 12px;
+        background-color: #ca8489;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: appear 0.8s;
+      }
+
+      @keyframes appear {
+        0% {
+          transform: translate(-50%, -50%) scale(0);
+          background-color: #fff;
+        }
+        45% {
+          transform: translate(-50%, -50%) scale(1.6);
+          background-color: #64aedf;
+        }
+        50% {
+          transform: translate(-50%, -50%) scale(1.7);
+          background-color: #ad97b3;
+        }
+        55% {
+          transform: translate(-50%, -50%) scale(1.6);
+        }
+        100% {
+          transform: translate(-50%, -50%) scale(1);
+          background-color: #ca8489;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="atas"></div>
+    <div class="container">
+      <div class="alert alert-success alert-dismissible fade show my-alert d-none" role="alert">
+        <strong>Terima kasih</strong> update selesai.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+
+      <div class="form">
+        <h2>PENIMBANGAN POSYANDU</h2>
+        <form name="penimbangan">
+          <div class="inputBox">
+            <input type="text" placeholder="CONTOH (pp-B10/06-2)" name="id-anak" />
+          </div>
+          <div class="inputBox">
+            <input type="text" placeholder="Nama Anak" name="anak" />
+          </div>
+          <div class="inputBox">
+            <input type="number" placeholder="BB sekarang" name="bb" />
+          </div>
+          <div class="inputBox">
+            <input type="number" placeholder="TB sekarang" name="tb" />
+          </div>
+          <fieldset>
+            <legend>Pilih (ntob):</legend>
+
+            <div>
+              <input type="radio" id="vanilla" name="ntob" value="Naik" />
+              <label for="vanilla">Naik </label>
+            </div>
+
+            <div>
+              <input type="radio" id="chocolate" name="ntob" value="Tetap" />
+              <label for="chocolate">Tetap </label>
+            </div>
+
+            <div>
+              <input type="radio" id="strawberry" name="ntob" value="Jarang" />
+              <label for="strawberry">Jarang </label>
+            </div>
+            <div>
+              <input type="radio" id="strawberry" name="ntob" value="Baru" />
+              <label for="strawberry">Baru </label>
+            </div>
+          </fieldset>
+
+          <div class="inputBox">
+            <textarea id="keterangan" placeholder="keterangan lainya" name="keterangan"> </textarea>
+          </div>
+
+          <div class="inputBox">
+            <button class="kirim" type="submit" value="submit">kirim</button>
+            <button class="btn btn-primary loading d-none" type="button" disabled>
+              <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+              Loading...
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbxZv_V6_xlUMiyIg8EGD4sNIHUnbuO62g5Rygsmpzmc0HRWLGWGTr-TMtNKka-3msmY/exec";
+      const form = document.forms["penimbangan"];
+
+      const myKirim = document.querySelector(".kirim");
+      const myLoading = document.querySelector(".loading");
+      const myAlert = document.querySelector(".my-alert");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        // ketika diklik hilangkan kirim tampilkan loading
+        myLoading.classList.toggle("d-none");
+        myKirim.classList.toggle("d-none");
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            // ketika diklik hilangkan loading tampilkan kirim
+            myLoading.classList.toggle("d-none");
+            myKirim.classList.toggle("d-none");
+            // alert
+            myAlert.classList.toggle("d-none");
+            // reset formulir
+            form.reset();
+            console.log("Success!", response);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
