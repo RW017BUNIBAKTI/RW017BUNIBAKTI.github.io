@@ -1,5 +1,7 @@
 @url ("https://fonts.googleapis.com/css?family=poppins:200,300,400,500,600,700import,800,900&display=swap");
-
+.form {
+  width: 100vw;
+}
 .container {
   width: 100%;
   height: 1600px;
@@ -33,6 +35,7 @@ h2 {
   z-index: 10000;
 }
 .inputBox {
+  width: 100%;
 }
 
 .inputBox input {
@@ -146,6 +149,10 @@ input[type="radio"]:checked::before {
 }
 /*menu drop down*/
 
+nav {
+  width: 100%;
+}
+
 nav menuitem {
   position: relative;
   display: block;
@@ -197,7 +204,7 @@ nav {
 nav a {
   background: rgb(7, 137, 170);
   color: #fff;
-  width: 110px;
+  width: 200px;
   height: 40px;
   transition: background 0.5s, color 0.5s, transform 0.5s;
   margin: 0px 6px 6px 0px;
@@ -278,18 +285,7 @@ menuitem > menu > menuitem.hover > menu > menuitem {
     height: 800px;
   }
   .container {
-    width: 1500px;
-    height: 2000px;
-  }
-}
-/* desktop */
-@media (min-width: 992px;) {
-  .atas {
-    width: 100vw;
-    height: 1200px;
-  }
-  .container {
-    width: 2000px;
+    width: 100%;
     height: 2000px;
   }
   .inputBox input {
@@ -300,5 +296,33 @@ menuitem > menu > menuitem.hover > menu > menuitem {
   button {
     height: 60px;
     font-size: 20px;
+  }
+  nav a {
+    width: 250px;
+    height: 50px;
+  }
+}
+/* desktop */
+@media (min-width: 992px;) {
+  .atas {
+    width: 100vw;
+    height: 1200px;
+  }
+  .container {
+    width: 100%;
+    height: 2000px;
+  }
+  .inputBox input {
+    width: 95%;
+    height: 80px;
+    font-size: 18px;
+  }
+  button {
+    height: 60px;
+    font-size: 20px;
+  }
+  nav a {
+    width: 250px;
+    height: 50px;
   }
 }
