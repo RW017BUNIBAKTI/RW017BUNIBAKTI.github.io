@@ -1,407 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-    <title>Penimbangan posyandu</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
-    <style type="text/css"></style>
-    <link rel="stylesheet" href="sign up.css" />
-  </head>
-  <body>
-    <h2>FORMULIR PENIMBANGAN POSYANDU</h2>
-    <div class="container" id="container">
-      <div class="alert alert-success alert-dismissible fade show my-alert d-none" role="alert">
-        <strong>Terima kasih</strong> update selesai.
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-      </div>
-      <div class="form-container sign-up-container">
-        <form name="penimbangan" action="#">
-          <h1>Daftar Baru</h1>
-          <div class="inputBox">
-            <input type="text" placeholder="CONTOH (A01/02)" name="alamat" />
-          </div>
-          <div class="inputBox">
-            <input type="number" placeholder="nomor KK" name="noKK" />
-          </div>
-          <div class="inputBox">
-            <input type="text" placeholder="nama lengkap anak" name="anak" />
-          </div>
-          <div class="inputBox">
-            <input type="number" placeholder="NIK Anak" name="nikAnak" />
-          </div>
-          <div class="inputBox">
-            <p>tanggal-lahir</p>
-            <input type="date" id="date" placeholder="tanggal lahir" name="tanggal-lahir" />
-          </div>
-          <div class="inputBox">
-            <input type="number" placeholder="berat badan lahir (Kg)" name="bbLahir" />
-          </div>
-          <div class="inputBox">
-            <input type="number" placeholder="tinggi badan lahir (cm)" name="tbLahir" />
-          </div>
-          <div class="inputBox">
-            <input type="text" placeholder="nama Ayah" name="ayah" />
-          </div>
-          <div class="inputBox">
-            <input type="number" placeholder="NIK Ayah" name="nikAyah" />
-          </div>
-          <div class="inputBox">
-            <input type="text" placeholder="nama Ibu" name="ibu" />
-          </div>
-          <div class="inputBox">
-            <input type="number" placeholder="NIK Ibu" name="nikIbu" />
-          </div>
-          <div class="inputBox">
-            <input type="number" placeholder="BB sekarang" name="bb" />
-          </div>
-          <div class="inputBox">
-            <input type="number" placeholder="TB sekarang" name="tb" />
-          </div>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Keren</title>
+    <link rel="stylesheet" href="style.css"> 
+   <!--  <link rel="stylesheet" href="style1.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
 
-          <fieldset>
-            <legend>Pilih (ntob):</legend>
+    <div class="container">
+        <h1 class="app-title">To-Do List Keren</h1>
 
-            <div>
-              <input type="radio" id="vanilla" name="ntob" value="Naik" />
-              <label for="vanilla">Naik </label>
-            </div>
-
-            <div>
-              <input type="radio" id="chocolate" name="ntob" value="Tetap" />
-              <label for="chocolate">Tetap </label>
-            </div>
-
-            <div>
-              <input type="radio" id="strawberry" name="ntob" value="Jarang" />
-              <label for="strawberry">Jarang </label>
-            </div>
-            <div>
-              <input type="radio" id="strawberry" name="ntob" value="Baru" />
-              <label for="strawberry">Baru </label>
-            </div>
-          </fieldset>
-
-          <div class="inputBox">
-            <textarea id="keterangan" placeholder="keterangan" name="keterangan">Keterangan </textarea>
-          </div>
-
-          <div class="inputBox">
-            <button class="kirim" type="submit" value="submit">Daftar Baru</button>
-            <button class="btn btn-primary loading d-none" type="button" disabled>
-              <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-              Loading...
-            </button>
-          </div>
-        </form>
-      </div>
-      <div class="form-container sign-in-container">
-        <form name="penimbangan" action="#">
-          <h1>Anggota Tetap</h1>
-          <nav>
-            <menu>
-              <menuitem id="demo1">
-                <a>Pilih ID Anak</a>
-                <menu>
-                  <menuitem>
-                    <a>AMETYST</a>
-                    <menu>
-                      <menuitem><a></a></menuitem>
-                      <!-- <menuitem><a>Test 2</a></menuitem>
-                      <menuitem><a>Test 3</a></menuitem>
-                      <menuitem><a>Test 4</a></menuitem> -->
-                    </menu>
-                  </menuitem>
-
-                  <menuitem>
-                    <a>BLOK B</a>
-                    <menu>
-                      <menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-B3/21-1" /> <label for="vanilla">pp-B3/21-1 </label></a></menuitem
-                      >
-                      <menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-B3/23-1" /> <laSbel for="vanilla">pp-B3/23-1 </laSbel></a></menuitem
-                      ><menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-B3/36-1" /> <label for="vanilla">pp-B3/36-1 </label></a></menuitem
-                      >
-                      <menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-B4/07-1" /> <label for="vanilla">pp-B4/07-1 </label></a></menuitem
-                      >
-                      <menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-B4/15-1" /> <label for="vanilla">pp-B4/15-1 </label></a></menuitem
-                      >
-                      <menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-B4/19-1" /> <laSbel for="vanilla">pp-B4/19-1 </laSbel></a></menuitem
-                      ><menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-B5/07-1" /> <label for="vanilla">pp-B5/07-1 </label></a></menuitem
-                      >
-                      <menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-B5/39-1" /> <label for="vanilla">pp-B5/39-1 </label></a></menuitem
-                      >
-                      <menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-B5/50-1" /> <label for="vanilla">pp-B5/50-1 </label></a></menuitem
-                      >
-                      <menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-B6/05-1" /> <laSbel for="vanilla">pp-B6/05-1 </laSbel></a></menuitem
-                      ><menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-B6/08-1" /> <label for="vanilla">pp-B6/08-1 </label></a></menuitem
-                      >
-                      <menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-B6/26-1" /> <label for="vanilla">pp-B6/26-1 </label></a></menuitem
-                      >
-                      <menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-B6/28-1" /> <label for="vanilla">pp-B6/28-1 </label></a></menuitem
-                      >
-                      <menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-B7/10-1" /> <laSbel for="vanilla">pp-B7/10-1 </laSbel></a></menuitem
-                      ><menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-B7/19-1" /> <label for="vanilla">pp-B7/19-1 </label></a></menuitem
-                      >
-                      <menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-B8/10-1" /> <label for="vanilla">pp-B8/10-1 </label></a></menuitem
-                      ><menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-B8/25-1" /> <label for="vanilla">pp-B8/25-1 </label></a></menuitem
-                      ><menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-B8/27-1" /> <label for="vanilla">pp-B8/27-1 </label></a></menuitem
-                      ><menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-B8/29-1" /> <label for="vanilla">pp-B8/29-1 </label></a></menuitem
-                      >
-                      <menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-B9/07-1" /> <label for="vanilla">pp-B9/07-1 </label></a></menuitem
-                      >
-                      <menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-B9/14-1" /> <label for="vanilla">pp-B9/14-1 </label></a></menuitem
-                      >
-                      <menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-B9/39-1" /> <label for="vanilla">pp-B9/39-1 </label></a></menuitem
-                      >
-                      <menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-B10/03-1" /> <laSbel for="vanilla">pp-B10/03-1 </laSbel></a></menuitem
-                      ><menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-B10/04-1" /> <label for="vanilla">pp-B10/04-1 </label></a></menuitem
-                      >
-                      <menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-B10/06-2" /> <label for="vanilla">pp-B10/06-2 </label></a></menuitem
-                      ><menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-B10/17-1" /> <label for="vanilla">pp-B10/17-1 </label></a></menuitem
-                      >
-                    </menu>
-                  </menuitem>
-                  <menuitem>
-                    <a>BLOK C1</a>
-                    <menu>
-                      <menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-C1/02-1" /> <label for="vanilla">pp-C1/02-1 </label></a></menuitem
-                      >
-                      <menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-C1/12-1" /> <label for="vanilla">pp-C1/12-1 </label></a></menuitem
-                      >
-                      <menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-C1/26-1" /> <label for="vanilla">pp-C1/26-1 </label></a></menuitem
-                      >
-                    </menu>
-                  </menuitem>
-                  <menuitem>
-                    <a>BLOK E</a>
-                    <menu>
-                      <menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-E16/06-1" /> <label for="vanilla">pp-E16/06-1 </label></a></menuitem
-                      >
-                      <menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-E16/11-1" /> <label for="vanilla">pp-E16/11-1 </label></a></menuitem
-                      >
-                      <menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-E16/46-1" /> <laSbel for="vanilla">pp-E16/46-1 </laSbel></a></menuitem
-                      ><menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-E17/05-1" /> <label for="vanilla">pp-E17/05-1 </label></a></menuitem
-                      >
-                      <menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-E15/08-1" /> <label for="vanilla">pp-E15/08-1 </label></a></menuitem
-                      >
-                      <menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-E15/34-1" /> <label for="vanilla">pp-E15/34-1 </label></a></menuitem
-                      >
-                      <menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-E1/07-1" /> <laSbel for="vanilla">pp-E1/07-1 </laSbel></a></menuitem
-                      ><menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-E1/12-1" /> <label for="vanilla">pp-E1/12-1 </label></a></menuitem
-                      >
-                      <menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-E1/16-1" /> <label for="vanilla">pp-E1/16-1 </label></a></menuitem
-                      >
-                      <menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-E6/12-1" /> <label for="vanilla">pp-E6/12-1 </label></a></menuitem
-                      >
-                      <menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-E6/20-1" /> <laSbel for="vanilla">pp-E6/20-1 </laSbel></a></menuitem
-                      ><menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-E14/03-1" /> <label for="vanilla">pp-E14/03-1 </label></a></menuitem
-                      >
-                      <menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-E14/15-1" /> <label for="vanilla">pp-E14/15-1 </label></a></menuitem
-                      >
-                      <menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-E12/26-1" /> <label for="vanilla">pp-E12/26-1 </label></a></menuitem
-                      >
-                      <menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-E9/01-1" /> <laSbel for="vanilla">pp-E9/01-1 </laSbel></a></menuitem
-                      ><menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-E9/09-1" /> <label for="vanilla">pp-E9/09-1 </label></a></menuitem
-                      >
-                      <menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-E9/10-1" /> <label for="vanilla">pp-E9/10-1 </label></a></menuitem
-                      ><menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-E7/07-1" /> <label for="vanilla">pp-E7/07-1 </label></a></menuitem
-                      ><menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-E7/24-1" /> <label for="vanilla">pp-E7/24-1 </label></a></menuitem
-                      ><menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-E14/23-1" /> <label for="vanilla">pp-E14/23-1 </label></a></menuitem
-                      >
-                      <menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-E14/28-1" /> <label for="vanilla">pp-E14/28-1 </label></a></menuitem
-                      >
-                    </menu>
-                  </menuitem>
-                  <menuitem>
-                    <a>BLOK I</a>
-                    <menu>
-                      <menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-I1/21-1" /> <label for="vanilla">pp-I1/21-1 </label></a></menuitem
-                      >
-                      <menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-I3/12-1" /> <label for="vanilla">pp-I3/12-1 </label></a></menuitem
-                      >
-                      <menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-I3/06-1" /> <laSbel for="vanilla">pp-I3/06-1 </laSbel></a></menuitem
-                      ><menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-I3/15-1" /> <label for="vanilla">pp-I3/15-1 </label></a></menuitem
-                      >
-                    </menu>
-                  </menuitem>
-                  <menuitem id="demo2">
-                    <a>BLOK J</a>
-                    <menu>
-                      <menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-J2/05-1" /> <label for="vanilla">pp-J2/05-1 </label></a></menuitem
-                      >
-                      <menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-J4/02-1" /> <label for="vanilla">pp-J4/02-1 </label></a></menuitem
-                      >
-                      <menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-J4/03-1" /> <laSbel for="vanilla">pp-J4/03-1 </laSbel></a></menuitem
-                      ><menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-J5/22-1" /> <label for="vanilla">pp-J5/22-1 </label></a></menuitem
-                      ><menuitem
-                        ><a><input type="radio" id="vanilla" name="id-anak" value="pp-J5/28-1" /> <label for="vanilla">pp-J5/28-1 </label></a></menuitem
-                      >
-                      <menuitem id="demo3">
-                        <a>CONTOH</a>
-                        <menu>
-                          <menuitem><a>deep 1</a></menuitem>
-                          <menuitem><a>deep 2</a></menuitem>
-                          <menuitem><a>deep 3</a></menuitem>
-                        </menu>
-                      </menuitem>
-                    </menu>
-                  </menuitem>
-                </menu>
-              </menuitem>
-            </menu>
-          </nav>
-
-          <div class="inputBox">
-            <input type="text" placeholder="Nama Anak" name="anak" />
-          </div>
-          <div class="inputBox">
-            <input type="number" placeholder="BB sekarang" name="bb" />
-          </div>
-          <div class="inputBox">
-            <input type="number" placeholder="TB sekarang" name="tb" />
-          </div>
-          <fieldset>
-            <legend>Pilih (ntob):</legend>
-
-            <div>
-              <input type="radio" id="vanilla" name="ntob" value="Naik" />
-              <label for="vanilla">Naik </label>
-            </div>
-
-            <div>
-              <input type="radio" id="chocolate" name="ntob" value="Tetap" />
-              <label for="chocolate">Tetap </label>
-            </div>
-
-            <div>
-              <input type="radio" id="strawberry" name="ntob" value="Jarang" />
-              <label for="strawberry">Jarang </label>
-            </div>
-            <div>
-              <input type="radio" id="strawberry" name="ntob" value="Baru" />
-              <label for="strawberry">Baru </label>
-            </div>
-          </fieldset>
-
-          <div class="inputBox">
-            <textarea id="keterangan" placeholder="keterangan lainya" name="keterangan"> </textarea>
-          </div>
-
-          <div class="inputBox">
-            <button class="kirim" type="submit" value="submit">kirim</button>
-            <button class="btn btn-primary loading d-none" type="button" disabled>
-              <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-              Loading...
-            </button>
-          </div>
-        </form>
-      </div>
-      <div class="overlay-container">
-        <div class="overlay">
-          <div class="overlay-panel overlay-left">
-            <h1>Welcome Back!</h1>
-            <p>Selamat datang kembali</p>
-            <button class="ghost" id="signIn">Sign In</button>
-          </div>
-          <div class="overlay-panel overlay-right">
-            <h1>Hello, Mom</h1>
-            <p>silahkan masukan data member baru posyandu</p>
-            <button class="ghost" id="signUp">Daftar</button>
-          </div>
+        <div class="input-section">
+            <input type="text" id="task-input" placeholder="Apa yang perlu kamu lakukan?">
+            <input type="datetime-local" id="deadline-input">
+            <select id="priority-input">
+                <option value="high">Prioritas Tinggi</option>
+                <option value="medium">Prioritas Sedang</option>
+                <option value="low">Prioritas Rendah</option>
+            </select>
+            <div class="category-section">
+    <h2>Kategori</h2>
+    <div class="add-category-input">
+        <input type="text" id="category-input" placeholder="Buat kategori baru...">
+        <button id="add-category-btn">Tambah Kategori</button>
+    </div> 
+    <ul id="category-list">
+        </ul>
+    <div id="filter-buttons" class="filter-buttons">
         </div>
-      </div>
+</div>
+            <button id="add-btn">Tambah Tugas</button>
+        </div>
+
+        
+
+
+                
+
+                
+        </div>
+        
+        <div class="task-list-section">
+            <ul id="task-list">
+                </ul>
+        </div>
+        
     </div>
 
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    <script>
-      const scriptURL = "https://script.google.com/macros/s/AKfycbxZv_V6_xlUMiyIg8EGD4sNIHUnbuO62g5Rygsmpzmc0HRWLGWGTr-TMtNKka-3msmY/exec";
-      const form = document.forms["penimbangan"];
-
-      const myKirim = document.querySelector(".kirim");
-      const myLoading = document.querySelector(".loading");
-      const myAlert = document.querySelector(".my-alert");
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        // ketika diklik hilangkan kirim tampilkan loading
-        myLoading.classList.toggle("d-none");
-        myKirim.classList.toggle("d-none");
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            // ketika diklik hilangkan loading tampilkan kirim
-            myLoading.classList.toggle("d-none");
-            myKirim.classList.toggle("d-none");
-            // alert
-            myAlert.classList.toggle("d-none");
-            // reset formulir
-            form.reset();
-            console.log("Success!", response);
-          })
-          .catch((error) => console.error("Error!", error.message));
-      });
-    </script>
-
-    <script src="sign up.js"></script>
-  </body>
+  <script src="script.js"></script>
+  
+   
+  <!--  <script src ="scriptGabung.js"></script>  -->
+</body>
 </html>
